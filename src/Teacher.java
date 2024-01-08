@@ -4,10 +4,11 @@ class Teacher extends Person {
     private String car; // Specific property for Artist
 
     // Constructor
-    public Teacher(String subject, String school, String name) {
+    public Teacher(String subject, String school, String name, String car) {
         super(name); // Initialize name from Person class
         this.subject = subject; // Initialize subject specific to Artist
         this.school = school; // Initialize subject specific to Artist
+        this.car = car;
     }
 
     // Implementing the abstract method from Person
