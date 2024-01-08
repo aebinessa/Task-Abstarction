@@ -1,6 +1,7 @@
 class Teacher extends Person {
     private String subject; // Specific property for Artist
     private String school; // Specific property for Artist
+    private String car; // Specific property for Artist
 
     // Constructor
     public Teacher(String subject, String school, String name) {
@@ -13,6 +14,11 @@ class Teacher extends Person {
     @Override
     void describeRole() {
         System.out.println(getName() + " is a " + subject + " teacher at " + school + " school");
+
+    }
+
+    void carTeacherDrives() {
+        System.out.println(getName() + " drives a " + car);
     }
 
     // generate setter and getter for subject and schools
@@ -31,4 +37,13 @@ class Teacher extends Person {
     public void setSchool(String school) {
         this.school = school;
     }
+
+    public String getCar() {
+        return car;
+    }
+
+    public void setCar(String car) {
+        this.car = car;
+    }
+
 }
